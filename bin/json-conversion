@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'json_conversions'
+
+puts "Something cool"

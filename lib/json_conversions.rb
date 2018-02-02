@@ -1,5 +1,17 @@
-require "json_conversions/version"
+require 'json_conversions/version'
+require 'json'
 
 module JsonConversions
-  # Your code goes here...
+  # Validate JSON
+  class Validate
+    def self.valid?(json)
+      !!JSON.parse(json) rescue false
+    end
+  end
+
+  # class Html 
+  #   def initialize(json)
+  #     @json = json 
+  #   end
+  # end
 end
